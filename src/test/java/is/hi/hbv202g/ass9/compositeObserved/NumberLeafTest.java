@@ -3,6 +3,8 @@ package is.hi.hbv202g.ass9.compositeObserved;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+import is.hi.hbv202g.ass9.composite.NumberLeaf;
+
 public class NumberLeafTest {
 
 	@Test

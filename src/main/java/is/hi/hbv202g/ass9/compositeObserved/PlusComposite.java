@@ -3,13 +3,10 @@ package is.hi.hbv202g.ass9.compositeObserved;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlusComposite implements MathExpression {
+public class PlusComposite implements MathExpression, Observer {
 
+    private int lastObservedField;
     private List<MathExpression> list = new ArrayList<>();
-
-    public PlusComposite() {
-
-    }
 
     public void add(MathExpression mathExpression) {
         list.add(mathExpression);
@@ -23,4 +20,12 @@ public class PlusComposite implements MathExpression {
         return result;
     }
 
+    public void update() {
+        lastObservedField = getResult();
+        System.out.println(lastObservedField);
+    }
+
+    public int getLastObservedField() {
+        return lastObservedField;
+    }
 }

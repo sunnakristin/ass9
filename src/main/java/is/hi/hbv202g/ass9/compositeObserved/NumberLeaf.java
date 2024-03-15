@@ -2,7 +2,7 @@ package is.hi.hbv202g.ass9.compositeObserved;
 
 import is.hi.hbv202g.ass9.composite.MathExpression;
 
-public class NumberLeaf implements MathExpression {
+public class NumberLeaf extends Observable implements MathExpression {
 
     private int i;
 
@@ -12,6 +12,11 @@ public class NumberLeaf implements MathExpression {
 
     public int getResult() {
         return i;
+    }
+
+    public void setValue(int i) {
+        this.i = i;
+        notifyObservers();
     }
 
 }

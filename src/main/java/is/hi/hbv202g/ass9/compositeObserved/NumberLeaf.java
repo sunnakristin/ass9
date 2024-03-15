@@ -1,4 +1,4 @@
-package is.hi.hbv202g.ass9.composite;
+package is.hi.hbv202g.ass9.compositeObserved;
 
 import is.hi.hbv202g.ass9.composite.MathExpression;
 

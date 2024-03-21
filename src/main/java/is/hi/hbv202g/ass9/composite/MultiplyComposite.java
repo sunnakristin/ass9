@@ -21,6 +21,7 @@ public class MultiplyComposite implements MathExpression, Observer {
         }
         return result;
     }
+
     public void update() {
         lastObservedField = getResult();
         System.out.println(lastObservedField);
@@ -29,10 +30,4 @@ public class MultiplyComposite implements MathExpression, Observer {
     public int getLastObservedResult() {
         return lastObservedField;
     }
-
-    public Object getLastObservedResult() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getLastObservedResult'");
-    }
-
 }

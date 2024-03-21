@@ -27,4 +27,9 @@ public class MultiplyComposite implements MathExpression, Observer {
         throw new UnsupportedOperationException("Unimplemented method 'update'");
     }
 
+    public Object getLastObservedResult() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getLastObservedResult'");
+    }
+
 }

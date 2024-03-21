@@ -3,7 +3,7 @@ package is.hi.hbv202g.ass9.compositeObservedTemplateMethod;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import is.hi.hbv202g.ass9.composite.NumberLeaf;
+import is.hi.hbv202g.ass9.compositeObserved.NumberLeaf;
 
 public class NumberLeafTest {
 

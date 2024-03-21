@@ -4,8 +4,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import is.hi.hbv202g.ass9.composite.MultiplyComposite;
-import is.hi.hbv202g.ass9.composite.NumberLeaf;
 import is.hi.hbv202g.ass9.composite.PlusComposite;
+import is.hi.hbv202g.ass9.compositeObserved.NumberLeaf;
 
 public class MixedCompositeObserverTest {
 

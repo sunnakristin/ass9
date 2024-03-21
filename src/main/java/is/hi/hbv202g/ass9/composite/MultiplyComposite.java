@@ -3,7 +3,9 @@ package is.hi.hbv202g.ass9.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MultiplyComposite implements MathExpression {
+import is.hi.hbv202g.ass9.compositeObserved.Observer;
+
+public class MultiplyComposite implements MathExpression, Observer {
 
     private List<MathExpression> list = new ArrayList<>();
 
@@ -17,6 +19,12 @@ public class MultiplyComposite implements MathExpression {
             result *= mathExpression.getResult();
         }
         return result;
+    }
+
+    @Override
+    public void update() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'update'");
     }
 
 }

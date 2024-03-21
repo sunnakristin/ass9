@@ -23,4 +23,14 @@ public class PlusComposite implements MathExpression {
         return result;
     }
 
+    public Object getLastObservedResult() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getLastObservedResult'");
+    }
+
+    public void update() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'update'");
+    }
+
 }

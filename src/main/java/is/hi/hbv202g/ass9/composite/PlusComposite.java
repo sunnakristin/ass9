@@ -5,6 +5,7 @@ import java.util.List;
 
 public class PlusComposite implements MathExpression {
 
+    private int lastObservedResult;
     private List<MathExpression> list = new ArrayList<>();
 
     public PlusComposite() {
@@ -23,14 +24,13 @@ public class PlusComposite implements MathExpression {
         return result;
     }
 
-    public Object getLastObservedResult() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getLastObservedResult'");
+    public void update() {
+        lastObservedResult = getResult();
+        System.out.println(lastObservedResult);
     }
 
-    public void update() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'update'");
+    public int getLastObservedResult() {
+        return lastObservedResult;
     }
 
 }

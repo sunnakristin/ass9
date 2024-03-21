@@ -7,6 +7,7 @@ import is.hi.hbv202g.ass9.compositeObserved.Observer;
 
 public class MultiplyComposite implements MathExpression, Observer {
 
+    private int lastObservedField;
     private List<MathExpression> list = new ArrayList<>();
 
     public void add(MathExpression mathExpression) {
@@ -20,11 +21,13 @@ public class MultiplyComposite implements MathExpression, Observer {
         }
         return result;
     }
-
-    @Override
     public void update() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'update'");
+        lastObservedField = getResult();
+        System.out.println(lastObservedField);
+    }
+
+    public int getLastObservedResult() {
+        return lastObservedField;
     }
 
 }

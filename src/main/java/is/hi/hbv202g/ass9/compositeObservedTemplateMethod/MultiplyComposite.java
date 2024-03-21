@@ -5,8 +5,11 @@ import java.util.List;
 
 public class MultiplyComposite implements MathExpression, Observer {
 
-    private int lastObservedField;
+    private int lastObservedResult;
     private List<MathExpression> list = new ArrayList<>();
+
+    public MultiplyComposite() {
+    }
 
     public void add(MathExpression mathExpression) {
         list.add(mathExpression);
@@ -21,11 +24,11 @@ public class MultiplyComposite implements MathExpression, Observer {
     }
 
     public void update() {
-        lastObservedField = getResult();
-        System.out.println(lastObservedField);
+        lastObservedResult = getResult();
+        System.out.println(lastObservedResult);
     }
 
     public int getLastObservedResult() {
-        return lastObservedField;
+        return lastObservedResult;
     }
 }

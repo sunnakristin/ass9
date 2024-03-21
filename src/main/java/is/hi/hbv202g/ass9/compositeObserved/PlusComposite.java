@@ -5,7 +5,7 @@ import java.util.List;
 
 public class PlusComposite implements MathExpression, Observer {
 
-    private int lastObservedField;
+    private int lastObservedResult;
     private List<MathExpression> list = new ArrayList<>();
 
     public void add(MathExpression mathExpression) {
@@ -21,11 +21,11 @@ public class PlusComposite implements MathExpression, Observer {
     }
 
     public void update() {
-        lastObservedField = getResult();
-        System.out.println(lastObservedField);
+        lastObservedResult = getResult();
+        System.out.println(lastObservedResult);
     }
 
-    public int getLastObservedField() {
-        return lastObservedField;
+    public int getLastObservedResult() {
+        return lastObservedResult;
     }
 }

@@ -7,7 +7,7 @@ import is.hi.hbv202g.ass9.compositeObserved.Observer;
 
 public class MultiplyComposite implements MathExpression, Observer {
 
-    private int lastObservedField;
+    private int lastObservedResult;
     private List<MathExpression> list = new ArrayList<>();
 
     public void add(MathExpression mathExpression) {
@@ -23,11 +23,11 @@ public class MultiplyComposite implements MathExpression, Observer {
     }
 
     public void update() {
-        lastObservedField = getResult();
-        System.out.println(lastObservedField);
+        lastObservedResult = getResult();
+        System.out.println(lastObservedResult);
     }
 
     public int getLastObservedResult() {
-        return lastObservedField;
+        return lastObservedResult;
     }
 }

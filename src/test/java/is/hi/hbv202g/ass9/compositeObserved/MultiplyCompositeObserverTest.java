@@ -20,9 +20,13 @@ public class MultiplyCompositeObserverTest {
 		NumberLeaf number2 = new NumberLeaf(2);
 		multiplyComposite.add(number2);
 
-		multiplyComposite.update(); // This will cause stuff printed on the screen: this printing to screen is not tested by any of the JUnit tests.
+		multiplyComposite.update(); // This will cause stuff printed on the screen: this printing to screen is not
+									// tested by any of the JUnit tests.
 
-		assertEquals("An observing multiply composite should store in its lastObservedField the value 2 to which the observed " +
-				"leaf was set", 2, multiplyComposite.getLastObservedResult());
+		assertEquals(
+				"An observing multiply composite should store in its lastObservedField the value 2 to which the observed "
+						+
+						"leaf was set",
+				2, multiplyComposite.getLastObservedResult());
 	}
 }
